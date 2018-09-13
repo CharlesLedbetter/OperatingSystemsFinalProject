@@ -1,0 +1,13 @@
+#!/bin/bash -e
+######################################################################
+# ** Script name: compileall (for CS344-400-w18) (HW4)
+# ** Author: Charles Ledbetter
+# ** Date: 3/16/2018
+# ** Description: compiles all the encryption and decryption programs
+# ** for HW4 - OTP.
+######################################################################
+gcc -std=c99 keygen.c -o keygen
+gcc -std=c99 otp_enc.c -o otp_enc
+gcc -std=c99 otp_dec.c -o otp_dec
+gcc -std=c99 otp_enc_d.c -o otp_enc_d
+gcc -std=c99 otp_dec_d.c -o otp_dec_d
